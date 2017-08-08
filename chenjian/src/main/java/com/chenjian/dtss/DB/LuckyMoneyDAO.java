@@ -24,14 +24,16 @@ public class LuckyMoneyDAO {
 	 */
 	public static int getTotalbyRound(int i,JdbcTemplate jdbcTemplate) {
 		RowMapper<Lucky_money> luckymoney_mapper = new BeanPropertyRowMapper<Lucky_money>(Lucky_money.class);
-		String query="select * from lucky_money where round=?";
-		try {
+		String query="select * from lucky_money where Round=?";
+//		try {
+			logger.info("1");
+			logger.info(jdbcTemplate.toString());
 			Lucky_money result=jdbcTemplate.queryForObject(query, luckymoney_mapper,i);
 			return result.getTotal();
-		}catch(Exception e) {
-			logger.info("错了啦");
-			return 0;
-		}
+//		}catch(Exception e) {
+//			logger.info("错了啦"+i);
+//			return 0;
+//		}
 	}
 	/**
 	 * 红包总额计减

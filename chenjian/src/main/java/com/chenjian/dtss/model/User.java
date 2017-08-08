@@ -5,16 +5,16 @@ public class User {
 	String username;
 	String  itcode;
 	boolean islock;
+	boolean isadmin;
 	public User() {}
-
-	public User(int uid, String username, String itcode, boolean islock) {
+	public User(int uid, String username, String itcode, boolean islock, boolean isadmin) {
 		super();
 		this.uid = uid;
 		this.username = username;
 		this.itcode = itcode;
 		this.islock = islock;
+		this.isadmin = isadmin;
 	}
-
 	public int getUid() {
 		return uid;
 	}
@@ -41,8 +41,22 @@ public class User {
 		this.islock = islock;
 	}
 
+	public boolean isIsadmin() {
+		return isadmin;
+	}
+
+
+	public void setIsadmin(boolean isadmin) {
+		this.isadmin = isadmin;
+	}
+
+
 	@Override
 	public String toString() {
-		return "User [uid=" + uid + ", username=" + username + ", itcode=" + itcode + ", islock=" + islock + "]";
+		return "User [uid=" + uid + ", username=" + username + ", itcode=" + itcode + ", islock=" + islock
+				+ ", isadmin=" + isadmin + "]";
 	}
+
+
+
 }

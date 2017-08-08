@@ -86,8 +86,8 @@ public class UserDAO {
 		// 如果没有查询到用户，这个工号就是没有的，实际上我们应该先找一下公司里面有没有这个人，先这样
 		if (result == null) {
 			int i;
-			// 一开始创建的用户如果没有开通钱包的话，我是不让他用的。
-			String query = "insert into User values (null,?,?,1)";
+			// 一开始创建的用户如果没有开通钱包的话，我是不让他用的。我们之后还有一个申请钱包的地方
+			String query = "insert into User values (null,?,?,1,0)";
 			try {
 				i = jdbcTemplate.update(query, new Object[] { username, itcode });
 			} catch (Exception e) {
@@ -215,6 +215,16 @@ public class UserDAO {
 			return user.isIslock();
 		}
 
+	}
+	/**
+	 * 目的：返回的是这个人是不是管理员
+	 * @param itcode 工号
+	 * @param jdbcTemplate
+	 * @return 判断结果
+	 */
+	public static boolean isadminByItcode(String itcode, JdbcTemplate jdbcTemplate) {
+		User user =getUserByItcode(itcode,jdbcTemplate);
+		return user.isIsadmin();
 	}
 
 }

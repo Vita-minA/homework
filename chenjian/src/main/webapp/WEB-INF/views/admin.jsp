@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="lucky_on?round=1">开启第一轮红包雨</a>
-<a href="lucky_on?round=2">开启第二轮红包雨</a>
-<a href="lucky_on?round=3">开启第三轮红包雨</a>
-
+<table>
+<tr><td><a href="lucky_on?round=1">开启第一轮红包雨</a></td></tr>
+<tr><td><a href="lucky_on?round=2">开启第二轮红包雨</a></td></tr>
+<tr><td><a href="lucky_on?round=3">开启第三轮红包雨</a></td></tr>
+</table>
 </body>
 </html>

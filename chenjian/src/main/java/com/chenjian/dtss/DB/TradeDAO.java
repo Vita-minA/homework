@@ -128,7 +128,7 @@ public class TradeDAO {
 			return false;
 	}
 	/**
-	 * 目的：添加交易记录
+	 * 目的：添加交易记录	
 	 * @param wid 钱包	
 	 * @param amount	数额	
 	 * @param date	时间	

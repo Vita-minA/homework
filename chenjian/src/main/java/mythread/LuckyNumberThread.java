@@ -6,7 +6,6 @@ import java.util.Random;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.chenjian.dtss.DB.LuckyDAO;
 import com.chenjian.dtss.DB.LuckyMoneyDAO;
 import com.chenjian.dtss.DB.LuckyMoneyRecordDAO;
 import com.chenjian.dtss.DB.TradeDAO;

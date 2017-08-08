@@ -29,12 +29,17 @@ public class Admin {
 	public String login(String username,String itcode) {
 		logger.info("是这里啊");
 		int flag=UserDAO.checkUserInfo(itcode, username, jdbcTemplate);
-		//我们是在这里写异步的，所以现在就先从简
+		//是要在这里写异步的，所以现在就先从简
 		if(flag==0) {
 			return username;
 		}
 		if(flag==1) {
+			boolean isadmin=UserDAO.isadminByItcode(itcode, jdbcTemplate);
+			if(isadmin) {
 			return "admin";
+			}
+			else
+				return "ChatRoom";
 		}
 		if(flag==-1) {
 			return itcode;
@@ -55,7 +60,7 @@ public class Admin {
 		t.setRound(r);
 		t.setFlag(true);
 		t.start();
-		return "luckyon";
+		return "lucky_on";
 	}
 	
 }

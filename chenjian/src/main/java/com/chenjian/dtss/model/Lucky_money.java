@@ -6,14 +6,13 @@ package com.chenjian.dtss.model;
 */
 public class Lucky_money {
 	int lid;
-	int round;
-	int total;
+	int Round;
+	int Total;
 	Lucky_money(){}
-	public Lucky_money(int lid, int round, int total) {
-		super();
+	public Lucky_money(int lid, int Round, int Total) {
 		this.lid = lid;
-		this.round = round;
-		this.total = total;
+		this.Round = Round;
+		this.Total = Total;
 	}
 	public int getLid() {
 		return lid;
@@ -22,20 +21,20 @@ public class Lucky_money {
 		this.lid = lid;
 	}
 	public int getRound() {
-		return round;
+		return Round;
 	}
 	public void setRound(int round) {
-		this.round = round;
+		this.Round = round;
 	}
 	public int getTotal() {
-		return total;
+		return Total;
 	}
 	public void setTotal(int total) {
-		this.total = total;
+		this.Total = total;
 	}
 	@Override
 	public String toString() {
-		return "Lucky_money [lid=" + lid + ", round=" + round + ", total=" + total + "]";
+		return "Lucky_money [lid=" + lid + ", Round=" + Round + ", Total=" + Total + "]";
 	};
 	
 }
