@@ -48,7 +48,7 @@ public class LuckyNumberThread extends Thread {
 					//给用户钱包加入指定数额
 					int k = WalletDAO.walletAdd(temp.getWid(), lucknumber,template);
 					//添加交易记录
-					int l = TradeDAO.createTrade(temp.getWid(), lucknumber, new Date().toString(), "红包雨");
+					int l = TradeDAO.createTrade(temp.getWid(), lucknumber, new Date().toString(), "红包雨",template);
 					if(i*j*k*l>0) {
 						//ok
 					} else {

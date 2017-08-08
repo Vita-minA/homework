@@ -136,14 +136,15 @@ public class TradeDAO {
 	 * @param jdbcTemplate 
 	 * @return 返回成功与否
 	 */
-	public static boolean createTrade(int wid, int amount, String date, String memo, JdbcTemplate jdbcTemplate) {
+	public static int createTrade(int wid, int amount, String date, String memo, JdbcTemplate jdbcTemplate) {
 		if (preTrade(wid, amount, jdbcTemplate)) {
 			// 写入交易数据
 			String query = "insert into trade values(null,?,?,?,null)";
 			Timestamp t = Timestamp.valueOf(query);
 			int i = jdbcTemplate.update(query, new Object[] { wid, amount, t });
+			return 1;
 		}
-		return false; 
+		return 0; 
 	}
 
 }
