@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.table{
+	color:#000000;
+}
+
+#wrong {
+	font-size: 20px;
+	color: #d5d5d5;
+	cursor: pointer;
+}
+#headprogram{
+	margin-top:5%;
+	overflow:auto;
+	width: 85%;
+	height: 40%;
+	
+	background-color: rgba(255,255,255,0.8);
+	
+}
+#jiemu{
+	overflow:auto;
+	left:15%;
+	width: 85%;
+	height: 40%;
+
+	background-color: rgba(255,255,255,0.9);
+	  
+}
+#pro{
+	width:400px;
+	height:40px;
+	left:30%;
+	color:#000000;
+	border: 2px solid rgba(249, 130, 13, 0);
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgba(230,230,230,1);
+	 
+}
+#pro:hover{
+	width:400px;
+	height:40px;
+	left:30%;
+	border: 2px solid rgba(249, 130, 13, 0);
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgba(187,200,220,1);
+	
+}
+.award{
+	height:34px;
+	width:34px;
+	border-radius:17px;
+	background-color: rgba(255,209,51,0.6);
+}
+.award:hover{
+	height:34px;
+	width:34px;
+	border-radius:17px;
+	background-color: rgba(255,51,51,0.8);
+}
+#dashang{
+	color:#000000;
+	height:60px;
+	width:60px;
+	border-radius:30px;
+	background-color: rgba(255,209,51,0.6);
+}
+#dashang:hover{
+	height:60px;
+	width:60px;
+	border-radius:30px;
+	background-color: rgba(255,51,51,0.8);
+}
+.programlist{
+	
+}
+.programlist .first{
+	
+}
+#back {
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	background: #d5d5d5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#aa {
+	border: none;
+	position: absolute;
+	top: 170px;
+	left: 550px;
+	right:auto;
+	overflow: hidden;
+	padding: 60px;
+	background-color: #ffffff;
+	display: none;
+	word-spacing: 10px;
+}
+#wrong{
+	text-laign:center;	
+	height:30px;
+	width:30px;
+	border-radius:15px;
+	color:rgba(50,50,50,0.8);
+	background-color: rgba(200,200,200,0.6);
+
+}
+#wrong:hover {
+	text-laign:center;
+	height:30px;
+	width:30px;
+	border-radius:15px;
+	color:rgba(50,50,50,0.8);
+	background-color: rgba(255,14,14,0.7);
+}
+#first{
+	
+}
+#zz{
+	width:500px
+}
+

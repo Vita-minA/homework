@@ -1,0 +1,97 @@
+
+
+/*====BG SLIDESHOW STRUCTURE
+=======================================================*/
+#page_overlay {
+	width:100%;
+	z-index:2;
+}
+
+#page_content {
+	/* Display on top of slideshow */
+	z-index:2;	
+	position:relative; /* This is very important! */	
+}
+
+img#bg {
+	/* Stretch background */
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:0;
+}
+
+
+/*====GENERAL BODY STRUCTURE
+=======================================================*/
+html, body, #left, #right {
+    height: auto;
+}
+html, body, #left {
+    height: 100%;
+    width: 100%;
+}
+body{
+	
+	background:url(../img/main_bg.jpg) repeat top center fixed;
+	color:#e4e4e4;
+	
+}
+
+/*====HOME PAGE
+=======================================================*/
+
+.banner-wrap{
+	position:relative;
+	padding:10px 0 50px 0;
+	background:url(../img/slider-shadow.png) no-repeat center 94%;
+	width:589px;
+	margin:0 auto;
+	min-height:273px;
+}
+.home-services{
+	text-align:center;
+	padding:5px 0 25px 0;
+}
+.home-services p{
+	padding:0 5px;
+	
+}
+.punch-line{
+	color:rgba(0,0,0,1.00);
+	text-align:center;
+	font-size:23px;
+	padding:30px 20px 20px 20px;
+	margin:0 0 10px 0;
+	line-height:30px;
+	background:url(../img/line_seperator.png) no-repeat bottom center;
+}
+
+.grid_9
+ {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+.alpha {
+  margin-left: 0;
+}
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	height:0px;
+	overflow: hidden;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+
+
